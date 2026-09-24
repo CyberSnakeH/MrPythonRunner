@@ -7,6 +7,7 @@ import tempfile
 import threading
 import time
 import unittest
+from unittest.mock import patch
 import urllib.error
 import urllib.request
 import zipfile
@@ -235,6 +236,16 @@ class ApiTests(unittest.TestCase):
         request = urllib.request.Request(self.url + '/api/' + path, data=json.dumps(data or {}).encode(), headers=headers)
         with urllib.request.urlopen(request, timeout=5) as response:
             return json.load(response)
+
+    def test_startup_does_not_depend_on_reverse_dns(self):
+        with patch('socket.getfqdn', side_effect=OSError('Resolver unavailable')):
+            server = create_server(self.app)
+            try:
+                self.assertEqual(server.server_name, '127.0.0.1')
+                self.assertEqual(server.server_port, server.server_address[1])
+                self.assertGreater(server.server_port, 0)
+            finally:
+                server.server_close()
 
     def test_api_requires_token_and_same_origin(self):
         for args in ({'token': False}, {'origin': 'https://example.invalid'}):

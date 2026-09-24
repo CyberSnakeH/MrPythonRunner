@@ -11,6 +11,7 @@ import threading
 import webbrowser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from socketserver import TCPServer
 from urllib.parse import unquote, urlsplit
 
 from .formats import assign_pack, check_student, export_pack, export_work, fingerprint, import_pack, import_work
@@ -101,6 +102,14 @@ class Application:
         raise ValueError("Action inconnue.")
 
 
+class LocalHTTPServer(ThreadingHTTPServer):
+    def server_bind(self):
+        # The loopback address is numeric. Reverse DNS is unnecessary and can
+        # stall startup on systems without a responsive hostname resolver.
+        TCPServer.server_bind(self)
+        self.server_name, self.server_port = self.server_address
+
+
 def create_server(app, port=0):
     class Handler(BaseHTTPRequestHandler):
         def log_message(self, *args):
@@ -156,7 +165,7 @@ def create_server(app, port=0):
             mime = {".js": "text/javascript", ".css": "text/css", ".svg": "image/svg+xml"}.get(target.suffix)
             self.reply(200, target.read_bytes(), mime or mimetypes.guess_type(target.name)[0] or "application/octet-stream")
 
-    server = ThreadingHTTPServer(("127.0.0.1", port), Handler)
+    server = LocalHTTPServer(("127.0.0.1", port), Handler)
     server.daemon_threads = True
     return server
 
