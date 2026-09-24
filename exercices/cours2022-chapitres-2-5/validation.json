@@ -1,0 +1,656 @@
+{
+  "edition": 2,
+  "exercises": 60,
+  "series": 12,
+  "tests": 386,
+  "points": 292,
+  "kinds": {
+    "function": 36,
+    "complete": 12,
+    "debug": 12
+  },
+  "roundtrip_packs": 13,
+  "assigned_roundtrips": 13,
+  "wrong_identity_rejected": true,
+  "teacher_templates_blocked_for_students": true,
+  "worker_checks": [
+    {
+      "function": "commande_partageable",
+      "status": "passed",
+      "passed": 7,
+      "total": 7
+    },
+    {
+      "function": "assemblages_boites",
+      "status": "passed",
+      "passed": 7,
+      "total": 7
+    },
+    {
+      "function": "eau_debordee",
+      "status": "passed",
+      "passed": 6,
+      "total": 6
+    },
+    {
+      "function": "premiere_baisse",
+      "status": "passed",
+      "passed": 7,
+      "total": 7
+    },
+    {
+      "function": "normaliser_espaces",
+      "status": "passed",
+      "passed": 7,
+      "total": 7
+    },
+    {
+      "function": "contenu_balise",
+      "status": "passed",
+      "passed": 7,
+      "total": 7
+    }
+  ],
+  "checks": [
+    {
+      "exercise": "r2-c2-s01-e01",
+      "function": "ruban_affiches",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c2-s01-e02",
+      "function": "autonomie_robot",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c2-s01-e03",
+      "function": "dalles_bordure",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c2-s01-e04",
+      "function": "taille_archive",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c2-s01-e05",
+      "function": "budget_badges",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c2-s02-e06",
+      "function": "ouvrir_serre",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c2-s02-e07",
+      "function": "demander_recharge",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c2-s02-e08",
+      "function": "commande_partageable",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c2-s02-e09",
+      "function": "deux_capteurs_valides",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c2-s02-e10",
+      "function": "reservations_en_conflit",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c2-s03-e11",
+      "function": "cout_consigne",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c2-s03-e12",
+      "function": "quantite_a_expedier",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c2-s03-e13",
+      "function": "mode_ventilation",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c2-s03-e14",
+      "function": "points_livraison",
+      "tests": 8,
+      "passed": 8,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c2-s03-e15",
+      "function": "location_casier",
+      "tests": 8,
+      "passed": 8,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c3-s04-e16",
+      "function": "places_gradins",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c3-s04-e17",
+      "function": "batterie_missions",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c3-s04-e18",
+      "function": "epargne_alternee",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c3-s04-e19",
+      "function": "position_balancier",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c3-s04-e20",
+      "function": "stock_apres_tri",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c3-s05-e21",
+      "function": "jours_collecte",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c3-s05-e22",
+      "function": "pliages_format",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c3-s05-e23",
+      "function": "dechets_retires",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c3-s05-e24",
+      "function": "jours_reserve",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c3-s05-e25",
+      "function": "ascension_sonde",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c3-s06-e26",
+      "function": "formules_visite",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c3-s06-e27",
+      "function": "cases_balisees",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c3-s06-e28",
+      "function": "passages_communs",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c3-s06-e29",
+      "function": "charge_tournees",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c3-s06-e30",
+      "function": "assemblages_boites",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c4-s07-e31",
+      "function": "reste_distribution",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c4-s07-e32",
+      "function": "pieces_caisse",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c4-s07-e33",
+      "function": "stock_controle",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c4-s07-e34",
+      "function": "distance_freinage",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c4-s07-e35",
+      "function": "eau_debordee",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c4-s08-e36",
+      "function": "prochaine_place",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c4-s08-e37",
+      "function": "premier_creneau",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c4-s08-e38",
+      "function": "energie_veille",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c4-s08-e39",
+      "function": "controles_avant_alerte",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c4-s08-e40",
+      "function": "taille_apres_reductions",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c4-s09-e41",
+      "function": "espace_inutilise",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c4-s09-e42",
+      "function": "achats_croissants",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c4-s09-e43",
+      "function": "alertes_capteur",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c4-s09-e44",
+      "function": "pic_charge",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c4-s09-e45",
+      "function": "rencontre_robots",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c5-s10-e46",
+      "function": "marquages_regle",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c5-s10-e47",
+      "function": "initiales_badge",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c5-s10-e48",
+      "function": "masquer_reference",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c5-s10-e49",
+      "function": "rotation_etiquette",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c5-s10-e50",
+      "function": "ligne_tableau",
+      "tests": 6,
+      "passed": 6,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c5-s11-e51",
+      "function": "compter_mots_message",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c5-s11-e52",
+      "function": "plus_longue_activation",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c5-s11-e53",
+      "function": "premiere_baisse",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c5-s11-e54",
+      "function": "journal_coherent",
+      "tests": 8,
+      "passed": 8,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c5-s11-e55",
+      "function": "changements_mode",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c5-s12-e56",
+      "function": "normaliser_espaces",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c5-s12-e57",
+      "function": "coder_signal",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c5-s12-e58",
+      "function": "couper_commentaire",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c5-s12-e59",
+      "function": "contenu_balise",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    },
+    {
+      "exercise": "r2-c5-s12-e60",
+      "function": "executer_repetitions",
+      "tests": 7,
+      "passed": 7,
+      "solution": "passed",
+      "starter": "failed",
+      "constant_answer": "failed",
+      "diagnostics": []
+    }
+  ]
+}

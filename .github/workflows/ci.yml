@@ -1,0 +1,37 @@
+name: Vérifications
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: ${{ matrix.os }} / Python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-22.04, macos-latest]
+        python: ['3.11', '3.14']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Installer et construire depuis les sources
+        run: python scripts/setup.py
+      - name: Tests de l’application
+        run: python -m unittest discover -s tests -v
+      - name: Régressions MrPython
+        run: python scripts/check_upstream.py
+      - name: Lancement du serveur et du worker
+        run: python scripts/smoke_bundle.py --source

@@ -1,0 +1,10 @@
+export type TestCase = { id: string; label: string; code: string; hidden: boolean };
+export type Exercise = { id: string; kind: 'function' | 'complete' | 'debug'; title: string; statement: string; starter: string; points: number; timeout: number; tests: TestCase[] };
+export type Pack = { format: 'mrpython-pack'; version: 1 | 2; assignment?: { source_pack_id: string; student_id: string }; id: string; title: string; description: string; author: string; exercises: Exercise[]; assets: Record<string, string> };
+export type Diagnostic = { severity: string; message: string; details?: string; line?: number; file?: string };
+export type Report = { status: string; diagnostics: Diagnostic[]; tests: { id: string; label: string; hidden: boolean; passed: boolean; error?: Diagnostic }[]; output: string; passed: number; total: number; score: number; max_score: number; duration_ms: number };
+export type Draft = { code: string; report: Report | null; updated?: string };
+export type Work = { student: string; pack_id: string; pack_title: string; exported: string; answers: { exercise_id: string; code: string; local_report?: Report }[] };
+export const kinds = { function: 'Écrire une fonction', complete: 'Compléter le code', debug: 'Corriger un programme' };
+export const uid = () => crypto.randomUUID();
+export const newExercise = (): Exercise => ({ id: uid(), kind: 'function', title: 'Nouvel exercice', statement: '## Objectif\n\nDécrivez ici le problème à résoudre.\n\nVous pouvez écrire des formules : $f(x) = x^2$.', starter: 'def solution(n: int) -> int:\n    """Décrivez le résultat attendu."""\n    return 0\n', points: 1, timeout: 5, tests: [] });

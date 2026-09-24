@@ -1,0 +1,31 @@
+{
+  "format": "mrpython-pack", "version": 1, "id": "premiers-pas", "title": "Les premiers pas en Python",
+  "author": "MrPython Runner", "description": "Trois exercices pour prendre en main les fonctions, les conditions et les sommes. Vous pouvez modifier cette série dans l'espace professeur.",
+  "assets": {},
+  "exercises": [
+    {"id": "carre", "kind": "function", "title": "Le carré d'un nombre", "points": 4, "timeout": 5,
+     "statement": "## À vous de jouer\n\nÉcrire une fonction `carre` qui prend un entier `n` et retourne son carré.\n\n$$f(n) = n^2$$\n\n### Signature attendue\n\n```python\ndef carre(n: int) -> int:\n```\n\nPour `n = 3`, la fonction doit retourner `9`. Pensez aussi à zéro et aux nombres négatifs.\n\n> Utilisez `return` pour renvoyer le résultat. `print` sert uniquement à afficher une valeur.",
+     "starter": "def carre(n: int) -> int:\n    \"\"\"Retourne le carré de n.\"\"\"\n    # Écrivez votre solution ici.\n    return 0\n",
+     "tests": [
+       {"id": "positif", "label": "Un nombre positif", "code": "assert carre(3) == 9", "hidden": false},
+       {"id": "zero", "label": "Le cas zéro", "code": "assert carre(0) == 0", "hidden": false},
+       {"id": "negatif", "label": "Un nombre négatif", "code": "assert carre(-7) == 49", "hidden": true}
+     ]},
+    {"id": "absolu", "kind": "debug", "title": "Retrouver la valeur absolue", "points": 6, "timeout": 5,
+     "statement": "## Trouvez l'erreur\n\nLa fonction fournie doit calculer la valeur absolue d'un entier, mais elle contient une erreur. Corrigez-la.\n\n$$|n| = \\begin{cases} n & \\text{si } n \\geq 0 \\\\ -n & \\text{sinon} \\end{cases}$$\n\nTestez votre correction avec un nombre positif, un nombre négatif et zéro.",
+     "starter": "def absolu(n: int) -> int:\n    \"\"\"Retourne la valeur absolue de n.\"\"\"\n    if n < 0:\n        return n\n    return n\n",
+     "tests": [
+       {"id": "positif", "label": "Valeur positive", "code": "assert absolu(8) == 8", "hidden": false},
+       {"id": "negatif", "label": "Valeur négative", "code": "assert absolu(-8) == 8", "hidden": false},
+       {"id": "zero", "label": "Valeur nulle", "code": "assert absolu(0) == 0", "hidden": true}
+     ]},
+    {"id": "somme", "kind": "complete", "title": "Une somme, pas à pas", "points": 10, "timeout": 5,
+     "statement": "## Complétez la fonction\n\nCalculer la somme des entiers de 1 à `n` inclus, avec une boucle. On suppose $n \\geq 0$.\n\n$$S_n = \\sum_{k=1}^{n} k = \\frac{n(n+1)}{2}$$\n\nLa formule vous permet de vérifier vos résultats. Pour cet exercice, construisez la somme avec une boucle `for`.\n\n**Exemple :** `somme(4)` retourne `10`. Pour `n = 0`, la somme vaut `0`.\n\n*Le correcteur vérifie les résultats ; le respect de la consigne « avec une boucle » est à examiner par le professeur.*",
+     "starter": "def somme(n: int) -> int:\n    \"\"\"Retourne la somme des entiers de 1 à n.\n    Précondition : n >= 0\n    \"\"\"\n    total: int = 0\n    # Complétez le calcul.\n    return total\n",
+     "tests": [
+       {"id": "quatre", "label": "La somme jusqu'à 4", "code": "assert somme(4) == 10", "hidden": false},
+       {"id": "zero", "label": "Une somme vide", "code": "assert somme(0) == 0", "hidden": false},
+       {"id": "grand", "label": "Une somme plus grande", "code": "assert somme(100) == 5050", "hidden": true}
+     ]}
+  ]
+}

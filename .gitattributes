@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.mrpack binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.woff binary
+*.woff2 binary
+*.pdf binary
+*.zip binary

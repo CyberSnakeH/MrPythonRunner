@@ -1,0 +1,39 @@
+# Environnements et dépendances locales
+.venv/
+venv/
+node_modules/
+.npm-cache/
+
+# Compilation et caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.tsbuildinfo
+.pytest_cache/
+.coverage
+htmlcov/
+/build/
+/dist/
+/frontend/dist/
+/frontend/public/vendor/
+
+# Données privées, résultats et exports locaux
+*.sqlite3
+*.sqlite3-*
+*.db
+*.mrwork
+*.log
+.env
+.env.*
+/test-results/
+/exercices/archives/
+/exercices/*.zip
+
+# Fichiers du système et de l’éditeur
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+.idea/
+.vscode/

@@ -1,0 +1,117 @@
+{
+  "questions": 12,
+  "tests": 48,
+  "passed": 48,
+  "points": 48,
+  "diagnostics": [],
+  "starter_status": "failed",
+  "worker_status": "passed",
+  "worker_passed": 48,
+  "roundtrip": true,
+  "assignment_checked": true,
+  "wrong_identity_rejected": true,
+  "questions_checks": [
+    {
+      "question": 1,
+      "function": "cout_action",
+      "tests": 4,
+      "solution_passed": 4,
+      "constant_mutation": "failed",
+      "required_calls_present": true
+    },
+    {
+      "question": 2,
+      "function": "action_possible",
+      "tests": 4,
+      "solution_passed": 4,
+      "constant_mutation": "failed",
+      "required_calls_present": true
+    },
+    {
+      "question": 3,
+      "function": "position_apres",
+      "tests": 4,
+      "solution_passed": 4,
+      "constant_mutation": "failed",
+      "required_calls_present": true
+    },
+    {
+      "question": 4,
+      "function": "recharger",
+      "tests": 4,
+      "solution_passed": 4,
+      "constant_mutation": "failed",
+      "required_calls_present": true
+    },
+    {
+      "question": 5,
+      "function": "minutes_recharge",
+      "tests": 4,
+      "solution_passed": 4,
+      "constant_mutation": "failed",
+      "required_calls_present": true
+    },
+    {
+      "question": 6,
+      "function": "avancer_au_maximum",
+      "tests": 4,
+      "solution_passed": 4,
+      "constant_mutation": "failed",
+      "required_calls_present": true
+    },
+    {
+      "question": 7,
+      "function": "programme_valide",
+      "tests": 4,
+      "solution_passed": 4,
+      "constant_mutation": "failed",
+      "required_calls_present": true
+    },
+    {
+      "question": 8,
+      "function": "energie_programme",
+      "tests": 4,
+      "solution_passed": 4,
+      "constant_mutation": "failed",
+      "required_calls_present": true
+    },
+    {
+      "question": 9,
+      "function": "prefixe_executable",
+      "tests": 4,
+      "solution_passed": 4,
+      "constant_mutation": "failed",
+      "required_calls_present": true
+    },
+    {
+      "question": 10,
+      "function": "position_finale",
+      "tests": 4,
+      "solution_passed": 4,
+      "constant_mutation": "failed",
+      "required_calls_present": true
+    },
+    {
+      "question": 11,
+      "function": "energie_restante",
+      "tests": 4,
+      "solution_passed": 4,
+      "constant_mutation": "failed",
+      "required_calls_present": true
+    },
+    {
+      "question": 12,
+      "function": "bilan_mission",
+      "tests": 4,
+      "solution_passed": 4,
+      "constant_mutation": "failed",
+      "required_calls_present": true
+    }
+  ],
+  "tikz_diagrams": [
+    "couloir",
+    "recharge",
+    "execution",
+    "fonctions"
+  ]
+}

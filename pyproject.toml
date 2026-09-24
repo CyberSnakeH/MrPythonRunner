@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mrpython-runner"
+version = "0.1.0"
+description = "Atelier d'exercices Python hors ligne, avec le moteur pédagogique MrPython"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md", "runner/vendor/mrpython/LICENSE.python", "runner/vendor/mrpython/AUTHORS", "runner/vendor/mrpython/NOTICE.md"]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+desktop = ["pywebview>=6,<7"]
+build = ["pyinstaller>=6.15,<7"]
+
+[tool.setuptools.packages.find]
+include = ["runner*"]
+
+[tool.setuptools.package-data]
+"runner.vendor.mrpython" = ["LICENSE.python", "AUTHORS", "NOTICE.md"]
